@@ -32,21 +32,21 @@ Make the script executable:
 
 📌 Basic Usage
 
-./portseeker.sh -t <target>
+./portseeker.sh  <target>
 
 
 
 ⚙️ With Options
 
-./portseeker.sh -t 192.168.1.1 -T 100 -f results.txt --top
+./portseeker.sh  192.168.1.1 --threads 30 --output results.txt --top
 
 
 🛠 Options
 Option	Description:
 
--t	Target IP or domain to scan (required)
--T	Number of threads (default: 50)
--f	Save results to a specified file
+  Target IP or domain to scan (required)
+--threads	Number of threads (default: 50)
+--output	Save results to a specified file
 --top	Scan only the top 1000 most common TCP ports
 -h	Show help menu
 
